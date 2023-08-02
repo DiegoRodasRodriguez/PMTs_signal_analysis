@@ -1,0 +1,16 @@
+function Y = MERT_Q_for_fit(par, X)
+
+global alphaD alphaQ
+
+A  = par(1);
+if(length(par)A1 = par(2);
+D  = par(3);
+F  = par(4);
+H  = par(5);
+A2 = par(6);
+G  = par(7);
+
+Y = 10^20 * Q_MERT(X, alphaD, alphaQ, A, A1, D, F, H, A2, G);  %A^2
+
+end
+
