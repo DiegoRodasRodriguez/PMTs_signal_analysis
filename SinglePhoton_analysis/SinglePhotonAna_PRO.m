@@ -22,6 +22,9 @@
 clearvars;
 close all;
 
+addpath [loc_path, 'HOME_RareEventsGroup\DiegoR\BasicScripts']
+addpath [loc_path, 'HOME_RareEventsGroup\DiegoR\BasicScripts\_COMMON_SCRIPTS']
+
 global Ndata Qdata sigmaNdata;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,7 +87,7 @@ if(isTriggerSignalIn && isLEDsignal1 ==1)
     iPM          = 1;
     iTrig        = 2; 
 end
-
+    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% IIa. START ANALYSIS (OBTAIN WVF IN WINDOWS)                         %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -304,7 +307,7 @@ lb(5)     = 0.05;  ub(5)     = 1.5;
 lb(6)     = -0.5;  ub(6)     = 0.5;
 
 options=optimset('TolX',1e-6,'TolFun',1e-6,'MaxFunEvals', 1000*length(par0),'MaxIter',2000);
-parQ = lsqnonlin(@GFitterSP,par0,lb,ub,options);
+parQ = lsqnonlin(@GFitterSP,par0,lb,ub,options);                            %lsqnonlin requieres Optimization Toolbox add-on installed
 
 figure; hold on;
 plot(Qdata, Ndata, '+', 'Markersize', 10);  lastline('color', 'k');

@@ -36,7 +36,9 @@ QPM3toPh = 0.45*(1.25/1.35)^7.63;   % 0.45 +- 0.04
 QPM4toPh = 0.42*(1.25/1.35)^7.63;   % 0.42 +- 0.04
 
 %%%%%%%%%%%% FILES %%%%%%%%%%%%%%%%%%%%%
-                         
+
+loc_path = 'C:\Users\diego\RareEventsGroup Dropbox\' ;
+
 %%%%%%%%%%%%%%%%
 %10bar campaign%
 %%%%%%%%%%%%%%%%
@@ -161,9 +163,13 @@ QPM4toPh = 0.42*(1.25/1.35)^7.63;   % 0.42 +- 0.04
 %DIR       = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\99_Ar_1_CF4\383V\';
 %DIR       = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\99_Ar_1_CF4\576V\';
 %DIR       = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\99_Ar_1_CF4\756V\';
-DIR       = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\99_Ar_1_CF4\756Vfinal\';
+
+general_path    = 'HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\99_Ar_1_CF4\756Vfinal\' ;
+general_path2   = 'HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\99_Ar_1_CF4\'
+
+DIR       = [loc_path, general_path] ;
 useAfterPulsingTemplate=1; storeAfterPulsingTemplate=1*0;
-TakeAfterPulsingFromExt = 1; DIR_OUTPUTa = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\99_Ar_1_CF4\';    
+TakeAfterPulsingFromExt = 1; DIR_OUTPUTa = [loc_path, general_path2];    
 isA1cut = 1; isA4cut = 1;
 QPM2toPh = 0.45*(1.25/1.35)^7.63;   % 0.45 +- 0.03                          %NOTE: correct for small mistake on PM HV during run
 

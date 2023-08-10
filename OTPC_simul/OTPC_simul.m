@@ -33,6 +33,15 @@ clearvars;
 close all;
 tic;
 
+
+% adding the path where all the aux functions are saved
+
+loc_path = 'C:\Users\diego\RareEventsGroup Dropbox\'
+
+addpath [ loc_path, 'HOME_RareEventsGroup\DiegoR\BasicScripts']
+addpath [ loc_path, 'HOME_RareEventsGroup\DiegoR\BasicScripts\_COMMON_SCRIPTS']
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%% I. INITIALIZATION PARAMETERS %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

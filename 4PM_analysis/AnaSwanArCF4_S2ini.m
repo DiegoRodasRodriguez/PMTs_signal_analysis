@@ -9,7 +9,7 @@
 % THERE ARE FILES WITH S1, AND WITH S2, AND S2 FILES CONTAIN S1 TOO       %
 % (SO THEY ALLOW TO ESTIMATE THE DRIFT VELOCITY)                          %
 %                                                                         %
-% THIS INITIALITATION FILE CORRESPONDS TO S1-ANALYSIS ONLY                %
+% THIS INITIALITATION FILE CORRESPONDS TO S2-ANALYSIS ONLY                %
 %                                                                         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -40,7 +40,9 @@ isAr = 0;
 isQreadout = 1;                                                              %For reading out anode
 
 %%%%%%%%%%%% FILES %%%%%%%%%%%%%%%%%%%%%
-                               
+
+loc_path = 'C:\Users\diego\RareEventsGroup Dropbox\' ;
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %10bar campaign (S1+S2) in SWAN %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,7 +136,10 @@ Tmin4_S2 = 0; Tmax4_S2 = 1000;
 % Q1cutLow = 90; Q1cutUp = 190; Q2cutLow = 10; Q2cutUp = 60; Q3cutLow = 200; Q3cutUp = 400; Q4cutLow = 100; Q4cutUp = 300; T20_LOW = 2770; T20_UP = 2870;
 %DIR       = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\26March_99_Ar_1_CF4\3900_V\'; fCF4 = 1;
 %Q1cutLow = 125; Q1cutUp = 250; Q2cutLow = 15; Q2cutUp = 80; Q3cutLow = 250; Q3cutUp = 500; Q4cutLow = 150; Q4cutUp = 350; T20_LOW = 2770; T20_UP = 2870;
-DIR       = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\26March_99_Ar_1_CF4\4000_V\'; fCF4 = 1; %W_uv = 4257eV; W_vis = 630eV; gain_uv = 0.1; gain_vis = 4.7;
+
+general_path = 'HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\26March_99_Ar_1_CF4\4000_V\' ;
+
+DIR       = [loc_path, general_path] ; fCF4 = 1; %W_uv = 4257eV; W_vis = 630eV; gain_uv = 0.1; gain_vis = 4.7;
 Q1cutLow = 150; Q1cutUp = 350; Q2cutLow = 20; Q2cutUp = 100; Q3cutLow = 200; Q3cutUp = 800; Q4cutLow = 150; Q4cutUp = 600; T20_LOW = 2770; T20_UP = 2870;
 %DIR       = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\2020run\Argon_CF4\NewSetup\10bar\26March_99_Ar_1_CF4\4100_V\'; fCF4 = 1;
 %Q1cutLow = 125; Q1cutUp = 500; Q2cutLow = 30; Q2cutUp = 120; Q3cutLow = 400; Q3cutUp = 1000; Q4cutLow = 250; Q4cutUp = 700; T20_LOW = 2770; T20_UP = 2870;

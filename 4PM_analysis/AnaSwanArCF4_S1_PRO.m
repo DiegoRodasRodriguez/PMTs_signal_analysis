@@ -55,6 +55,11 @@
 clearvars;
 close all;
 
+
+addpath 'C:\Users\diego\RareEventsGroup Dropbox\HOME_RareEventsGroup\DiegoR\BasicScripts'
+addpath 'C:\Users\diego\RareEventsGroup Dropbox\HOME_RareEventsGroup\DiegoR\BasicScripts\_COMMON_SCRIPTS'  
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% I. INITIALIZATION (adjust your desired values here)                 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

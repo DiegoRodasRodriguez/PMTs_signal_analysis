@@ -117,7 +117,17 @@
 %DIR         = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration\8bar_Dec22_2022\DF_75\EL_19\';
 %DIR         = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration\8bar_Dec22_2022\DF_75\EL_21\';
 %DIR         = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration\8bar_Dec22_2022\DF_75\EL_23\';
-DIR         = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration\8bar_Dec22_2022\DF_75\EL_25\';
+
+
+%Data saved in DiegoR local folders. This can be changed to use the desire
+%data.
+
+loc_path     = 'C:\Users\diego\RareEventsGroup Dropbox\'
+
+DIR          = [loc_path, 'HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration\8bar_Dec22_2022\DF_75\EL_25\']
+%DIR         = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration\8bar_Dec22_2022\DF_75\EL_25\';
+
+
 %DIR         = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration\8bar_Dec22_2022\DF_75\EL_28\';   %bad fit
 %DIR         = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration\8bar_Dec22_2022\DF_75\EL_315\';
 %DIR         = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration\8bar_Dec22_2022\DF_75\EL_34\';

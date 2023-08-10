@@ -19,6 +19,11 @@
 clearvars;
 close all;
 
+% Path to aux scripts:
+
+addpath [loc_path, 'HOME_RareEventsGroup\DiegoR\BasicScripts']
+addpath [loc_path, 'HOME_RareEventsGroup\DiegoR\BasicScripts\_COMMON_SCRIPTS']
+
 tic;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

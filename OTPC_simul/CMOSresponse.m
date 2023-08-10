@@ -27,7 +27,7 @@
 function NphXY = CMOSresponse(xePh, yePh, WePh)
 
 global M lensN sigmaNph QECMOS rebin Npixel pixelSize;
-global Tmesh;
+global Tmesh;                                                               %% Transparency
 
 %Calculate Solid angle and sensor size
 OmegaCMOS = 1/(16*lensN^2) * 1/(1/M + 1)^2;
