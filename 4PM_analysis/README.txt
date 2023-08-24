@@ -27,7 +27,7 @@
 		
 
 (__***__)								(__***__)
-(__***__)	A LOT OF WARNINGS POP UP WHEN RUNNING THIS SCRIPTS	(__***__)
+(__***__)	A LOT OF WARNINGS APPEAR WHEN RUNNING THIS SCRIPTS	(__***__)
 (__***__)								(__***__)
 
 
@@ -174,8 +174,5 @@ start to check it more carefully.
 
 
 --> Why is the trigger referring to PM1 and PM4 ???????
---> 
---> 
---> 
 --> 
 
