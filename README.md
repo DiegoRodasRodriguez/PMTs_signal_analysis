@@ -1,6 +1,6 @@
 # PMTs_signal_analysis
 
-Scripts to analyze PMT's signals
+Scripts to analyze PMT's signals ---> script's author: Diego González Díaz
 
 This repository contains 6 folders, each one contains a feature for the analysis of the PMTs signals obtained. Inside every folder there is a README file that datails the steps and speciffications to proper run the scripts in your computer.
 
@@ -23,4 +23,5 @@ This repository contains 6 folders, each one contains a feature for the analysis
 
 
 * BasicScripts: auxiliar scripts used in the previous one to perform the corresponding duties.
+
 
