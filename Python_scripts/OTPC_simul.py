@@ -64,7 +64,7 @@ def PyConvolve(U1,X1,U2,X2, Mode, Type='FFT', verbose=1):
 #def hist3D():
     
 
-class OTPC_simul:
+class OTPCsimulator:
     
     
     def GenStraightTrack(z0, theta0,phi0,Range,dEdx, M,nsteps):
@@ -136,7 +136,7 @@ class OTPC_simul:
         
         Lph=np.zeros(int(nphToT))
         
-        I0=1
+        I0=0
         nphCumm=0
         
         
@@ -178,16 +178,19 @@ class OTPC_simul:
         
         global P, vd, DL, DT
         
-        xeA=np.zeros(np.shape(xe))
-        yeA=xeA
-        zeA=xeA
-        teA=xeA
+        xeA=np.zeros(np.size(xe))
+        yeA=np.zeros(np.size(ye))
+        zeA=np.zeros(np.size(ze))
+        teA=np.zeros(np.size(te))
         
         for i in range(len(xe)):
             
-            teA[i]=te[i]+np.random.normal(ze[i]/vd,(DL*np.sqrt(ze[i]))/vd)
-            xeA[i]=np.random.normal(xe[i],DT*np.sqrt(ze[i]))
-            yeA[i]=np.random.normal(ye[i],DT*np.sqrt(ze[i]))
+            teA[i]=te[i]+np.random.normal(loc=ze[i]/vd,scale=(DL*np.sqrt(ze[i]))/vd)
+            
+            xeA[i]=np.random.normal(loc=xe[i],scale=DT*np.sqrt(ze[i]))
+            
+            yeA[i]=np.random.normal(loc=ye[i],scale=DT*np.sqrt(ze[i]))
+            
             zeA[i]=0
         
         return xeA,yeA,zeA,teA
