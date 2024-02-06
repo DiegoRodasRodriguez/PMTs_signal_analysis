@@ -22,8 +22,9 @@
 clearvars;
 close all;
 
-addpath [loc_path, 'HOME_RareEventsGroup\DiegoR\BasicScripts']
-addpath [loc_path, 'HOME_RareEventsGroup\DiegoR\BasicScripts\_COMMON_SCRIPTS']
+addpath ('loc_path', 'HOME_RareEventsGroup\DiegoR\BasicScripts\');
+addpath ('loc_path', 'HOME_RareEventsGroup\DiegoR\BasicScripts\_COMMON_SCRIPTS\');
+
 
 global Ndata Qdata sigmaNdata;
 

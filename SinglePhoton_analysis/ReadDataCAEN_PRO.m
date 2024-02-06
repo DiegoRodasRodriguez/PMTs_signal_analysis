@@ -7,7 +7,8 @@ filename = [DIR, FILE, '.mat'];
 fid      = fopen(filename,'r');
 
 if (fid ~= -1)
-    eval(['load ', filename]);    
+    load (filename); %('')
+%    eval(['load ', filename]);    
     disp(' loading workspace...');
     fclose(fid);
 else    

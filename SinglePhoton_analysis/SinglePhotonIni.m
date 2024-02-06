@@ -299,9 +299,9 @@
 DataType = 'CAEN';
 nCh = 2; isLEDsignal1 = 1;
 
-loc_path = 'C:\Users\diego\RareEventsGroup Dropbox\'
+loc_path = 'C:\Users\diego\RareEventsGroup Dropbox\';
 
-DIR= [loc_path, 'HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration_Falcon_05Dec2022\80sig_20zero\']
+DIR= [loc_path, 'HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration_Falcon_05Dec2022\80sig_20zero\'];
 %DIR = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration_Falcon_05Dec2022\80sig_20zero\'; % P0 = 67%    // <Q> = 1.03pC   // sigma_Q/<Q> = 0.71  // very good
 %DIR = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration_Falcon_05Dec2022\50sig_50zero\';  % P0 = 79%    // <Q> = 0.94pC   // sigma_Q/<Q> = 0.77  // very good
 %DIR = 'E:\HOME_RareEventsGroup\SETUPS\SWAN\DATA\Falcon_fatgems\calibration_Falcon_05Dec2022\20sig_80zero\'; % P0 = 90%    // <Q> = 0.70pC   // sigma_Q/<Q> = 1.02  // good (but not considered in fit)
